@@ -1,0 +1,81 @@
+<DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FORMULIR BIODATA MAHASISWA</title>
+		<link rel="stylesheet" type="text/css" href="formstyle.css" />
+	</head>
+	
+	<body>
+    <fieldset>
+        <legend color="white" align="center">
+            <h1>FORMULIR BIODATA MAHASISWA</h1>
+        </legend>
+        <div class="formulir">
+            <form action="formulir web.html" method="POST">
+
+                <div class="NIM">
+                    <p><label>NIM	:</label> <input type="text"><br></p>
+                    <p><label>Nama	:</label> <input type="text"><br></p>
+                </div>
+
+                <div class="Fakultas">
+                    <p>Fakultas :
+                        <select name='fakultas'>
+					    <option value='FPMIPA'>FPMIPA</option>
+					    <option value='FPTK'>FPTK</option>
+					<option value='KAMDA CIBIRU'>KAMDA CIBIRU</option>
+					<option value='FPBS'>FPBS</option>
+					<option value='KAMDA SUMEDANG'>KAMDA SUMEDANG</option>
+					</select>
+                    </p>
+                </div>
+                <div class="Jenis_Kelamin" <p><label>Jenis Kelamin	:</label>
+                    <input type="radio" name="gender" value="wanita" id="wanita">
+                    <label for="wanita">wanita</label>
+                    <input type="radio" name="gender" value="pria" id="pria">
+                    <label for="pria">pria</label>
+                    <br>
+                    </p>
+                </div>
+                <div class="agama">
+                    <p>Agama
+                        <select name='agama'>
+					<option value='islam'>Islam</option>
+					<option value='kristen'>Kristen</option>
+					<option value='katholik'>Katholik</option>
+					<option value='hindu'>Hindu</option>
+					<option value='Budha'>Budha</option>
+					</select>
+                    </p>
+                </div>
+
+                <div class="hobi">
+
+                    <p><label>Hobi		:</label>
+                        <input type="checkbox" name="Browsing">Browsing
+                        <input type="checkbox" name="Baca Buku">Baca Buku
+                        <input type="checkbox" name="Bermain">Bermain
+                        <input type="checkbox" name="Hacking">Hacking
+
+                        <br>
+                    </p>
+                </div>
+
+                <div class="alamat">
+
+                    <p><label>Alamat	:</label>
+                        <textarea name="alamat" cols="50" rows="10"></textarea>
+                    </p>
+                </div>
+
+                <div class="button">
+                    <p align="center">
+                        <button>Proses</button> <button>Reset</button>
+                    </p>
+                </div>
+
+            </form>
+        </div>
+	</body>
+</html>
